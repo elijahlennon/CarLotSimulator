@@ -8,19 +8,52 @@ namespace CarLotSimulator
         {
             //TODO
 
-            //Create a seperate class file called Car
-            //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
-            //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
-            //The methods should take one string parameter: the respective noise property
+            //Create a seperate class file called Car-DONE 
+            //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable-DONE
+
+            //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()-DONE
+            //The methods should take one string parameter: the respective noise property-DONE
 
 
-            //Now that the Car class is created we can instanciate 3 new cars
-            //Set the properties for each of the cars
-            //Call each of the methods for each car
+            //Now that the Car class is created we can instanciate 3 new cars-DONE
+            var tesla = new Car();
+            tesla.Year = 2021;
+            tesla.Make = "tesla";
+            tesla.Model = "model s";
+            tesla.EngineNoise = "prrr";
+            tesla.HonkNoise = "wink wink";
+            tesla.IsDriveable = true;
+
+            var hyundai = new Car()
+            {
+                Year = 2014,
+                Make = "hyundai",
+                Model = "sonata",
+                EngineNoise = "weeee",
+                HonkNoise = "weh weh",
+                IsDriveable = true
+            };
+
+            var ford = new Car(2020, "Ford", "Mustang", "Pooof", "Bunk Funk", false);
+
+
+            //Set the properties for each of the cars-DONE
+
+            //Call each of the methods for each car-DONE
+            tesla.MakeEngineNoise(tesla.EngineNoise);
+            tesla.MakeHonkNoise(tesla.HonkNoise);
+
+            hyundai.MakeEngineNoise(hyundai.EngineNoise);
+            hyundai.MakeHonkNoise(hyundai.HonkNoise);
+
+            ford.MakeEngineNoise(ford.EngineNoise);
+            ford.MakeEngineNoise(ford.HonkNoise);
+
 
             //*************BONUS*************//
 
-            // Set the properties utilizing the 3 different ways we learned about, one way for each car
+            // Set the properties utilizing the 3 different ways we learned about, one way for each car-DONE
+
 
             //*************BONUS X 2*************//
 
