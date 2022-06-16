@@ -64,10 +64,6 @@ namespace CarLotSimulator
 
             Console.WriteLine($"Number of cars created: {CarLot.numberOfCars}.");
 
-            for(int i = 0; i > CarLot.numberOfCars; i++)
-            {
-                Console.WriteLine($"Year: {ford.Year}, {tesla.Year}");
-            }
         }
     }
 }
