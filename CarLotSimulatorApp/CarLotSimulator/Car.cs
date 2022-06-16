@@ -10,6 +10,7 @@ namespace CarLotSimulator
         //Call each of the methods for each car
         public Car()
         {
+            CarLot.numberOfCars++;
         }
         public Car(int year, string model, string  make, string engineNoise, string honkNoise, bool isDriveable)
         {
